@@ -1,0 +1,49 @@
+.main{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid #9ebcd6;
+    background-color: white;
+    border-radius: 10px;
+    gap: 10px;
+    user-select: none;
+    padding: 1rem;
+    min-width: 25rem;
+}
+
+.notifications_list{
+    list-style: none;
+    border-top: 1px solid black;
+    overflow: hidden;
+}
+
+.list_item{
+    border-bottom: 1px solid black ;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+
+.add_notification{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    flex: 1;
+}
+
+.delete{
+    color: red;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.delete > div{
+    width: 100%;
+}

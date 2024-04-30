@@ -1,0 +1,57 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #eff8f9;
+    color: white;
+    position: relative;
+}
+
+.input{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    color: white;
+
+}
+
+.main:hover, .main:has(input:focus){
+    cursor: pointer;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+}
+
+.main:has(.input:disabled){
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+}
+
+.friendsDropdown{
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1/1;
+    height: 100%;
+}
+
+.friendsList{
+    background-color: white;
+    color: black;
+    max-height: 10rem;
+    overflow: scroll;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    right: 0;
+    width: 100%;
+}
+
+.friendsList > li {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.friendsList > li:hover{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}

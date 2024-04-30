@@ -1,0 +1,61 @@
+.center{
+    text-align: center;
+    color: 	#eeeeee;
+}
+
+.center > h1{
+    font-size: 4rem;
+    font-weight: 900;
+    color: #eff8f9;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1rem;
+    margin: 1rem;
+    flex: 1;
+}
+
+@media (max-width: 480px) {
+    .main{
+        grid-template-columns: 1fr;
+    }
+
+    .main >div:last-child{
+        grid-column: 1;
+    }
+}
+
+.secondary__text{
+    font-size: 0.7rem;
+}
+
+.share__files{
+    border: 1px solid #eff8f9;
+    grid-column: span 2;
+}
+
+.overlay{
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.overlay:hover{
+    filter: brightness(150%);
+}
+
+.button{
+    height: 3rem;
+    padding: 0.6rem;
+    border-radius: 5px;
+    background-color: #9ebcd6;
+    border: 3px solid #11609f;
+    cursor: pointer;
+
+    font-size: 1.5rem;
+}
+

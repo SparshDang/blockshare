@@ -1,0 +1,30 @@
+.files__container{
+    text-align: center;
+    overflow-y: scroll;
+    /* margin: 20px 10px; */
+    margin-bottom: 10px;
+}
+
+.files{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px auto;
+}
+
+.file{
+    border: 1px solid #9ebcd6;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    border-radius: 10px ;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+}
+
+.file:hover{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+}
